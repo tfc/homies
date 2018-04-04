@@ -1,0 +1,24 @@
+[user]
+	name = Jacek Galowicz
+    email = jacek@galowicz.de
+[core]
+	editor = /usr/bin/vim
+    excludefile = ~/.gitignore_global
+	whitespace = trailing-space,space-before-tab,indent-with-non-tab
+[push]
+	default = simple
+[help]
+    autocorrect = 20
+[color "branch"]
+    current = white reverse
+    local = white
+    remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
