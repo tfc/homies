@@ -4,18 +4,18 @@ let
   pkgs = import <nixpkgs> {};
 
   # The list of packages to be installed
-  homies = with pkgs;
-    [
-      # Customized packages
+  homies = [
       bashrc
       git
       tmux
       vim
-
-      pkgs.curl
-      pkgs.htop
-      pkgs.nix
-    ];
+    ] ++ (with pkgs; [
+      curl
+      htop
+      mosh
+      nix
+      sloccount
+    ]);
 
   ## Some cunstomizations
 
