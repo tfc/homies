@@ -106,7 +106,8 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 map <Leader>n :NERDTreeToggle<CR>
 
 let g:NERDTreeMouseMode = 2
-let g:NERDTreeWinSize = 40
+let g:NERDTreeQuitOnOpen = 1
+let g:NERDTreeWinSize = 60
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 if exists('$TMUX')
