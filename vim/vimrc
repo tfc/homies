@@ -105,6 +105,8 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 "nerdtree settings
 map <Leader>n :NERDTreeToggle<CR>
 
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeMinimalUI = 1
 let g:NERDTreeMouseMode = 2
 let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeWinSize = 60
