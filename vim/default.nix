@@ -11,13 +11,15 @@ vim_configurable.customize {
   vimrcConfig.vam.pluginDictionaries = [
     { names = [
       "Solarized"
-      "youcompleteme"
+      "fugitive"
       "nerdtree"
+      "surround"
       "syntastic"
       "vim-airline"
       "vim-markdown"
       "vim-nix"
       "vim-trailing-whitespace"
+      "youcompleteme"
     ]; }
   ];
 }
