@@ -99,7 +99,7 @@ let g:haddock_browser_callformat = "%s %s"
 
 autocmd BufEnter *.hs set formatprg=stylish-haskell
 
-autocmd FileType c,cpp,haskell,bash,python autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cpp,haskell,bash,python,txt,nix autocmd BufWritePre <buffer> %s/\s\+$//e
 
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 

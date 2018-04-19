@@ -14,8 +14,10 @@ vim_configurable.customize {
       "youcompleteme"
       "nerdtree"
       "syntastic"
+      "vim-airline"
       "vim-markdown"
       "vim-nix"
+      "vim-trailing-whitespace"
     ]; }
   ];
 }
