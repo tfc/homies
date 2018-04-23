@@ -1,8 +1,7 @@
 # The main homies file, where homies are defined. See the README.md for
 # instructions.
+{ pkgs ? import <nixpkgs> {} }:
 let
-  pkgs = import <nixpkgs> {};
-
   # The list of packages to be installed
   homies = [
       bashrc
