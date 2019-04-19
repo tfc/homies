@@ -1,20 +1,21 @@
 # The main homies file, where homies are defined. See the README.md for
 # instructions.
-{ pkgs ? import <nixpkgs> {} }:
+{
+  nixpkgs ? <nixpkgs>,
+  pkgs ? import nixpkgs {}
+}:
 let
-  customPkgs = import ./release.nix { pkgs = pkgs; };
+  customPkgs = import ./release.nix { inherit pkgs; };
 
   # The list of packages to be installed
   homies = (with customPkgs; [
-      bashrc
-      git
       tmux
-      vim
+      neovim
     ]) ++ (with pkgs; [
       curl
+      git
       htop
       mosh
-      nix
       sloccount
     ]);
 in
